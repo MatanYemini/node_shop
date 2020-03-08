@@ -1,0 +1,37 @@
+What is the right chose to your application?
+
+Goal -> stroe data and make it easily accessible
+
+MongoDB = noSQL
+
+SQL = tables with columns that describe an object / data, 
+      each row reprensent a record - different object with
+      same attributes.
+      allow you to relate different tables - connection
+      / relations between objects/
+	limitation for alot of queries per second
+Charactrictics:
+data schema - define how the data in the table should look like,
+fields type,what fields... all data in the table should be fitted
+data relations - one to one, one to many, many to many
+sql queries - commands to interact the database
+
+No SQL = database with a name, tables inside are called collections
+we look for documents in the collections - almost same as javascript
+we dont have a schema rules - u can store diffenent documents with different fields
+we dont have real relations, and might have duplicate data
+if the data changes - needed to be updated in all tables that uses it
+give huge advantage - dont need to use join queries - retrive data easily
+Great perfoemnce for mass read&write requests
+Charactrictics:
+no data shcema - no structe is required, 
+no relations - relate different documents and dont have to use multiple queries
+
+Horizontal scaling
+add more servers and merge data into one database - split the database on different servers
+almost impossible when using SQL - problem when our databse is complex and big
+NoSQL is possible (duplication of data)
+
+vertical scalling
+making the server stronger - have limit
+both SQL and NoSQL are possible
